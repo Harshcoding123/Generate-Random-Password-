@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    
+    background-color: #002339;
+}
+#main{
+    /* background-color: #fff; */
+    margin-left: 20rem;
+    margin-top: 10rem;
+
+}
+h1{
+    color: white;
+}
+#box{
+    border-radius: 3px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 25rem;
+    height: 3rem;
+    background-color: white;
+
+}
+#secondLine{
+    color: green;
+}
+input{
+    margin-left: 10px;
+    
+    
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    background-color: white;
+    outline:none ;
+    
+    border: none;
+}
+#copy{
+    cursor: pointer;
+    height: 2rem;
+    margin-left: 8rem;
+    background-color: white;
+    
+    /* background-color: black; */
+}
+#box2{
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 14rem;
+    margin-top: 25px;
+    background-color: green;
+}
+p{
+    background-color: green;
+    color: white;
+}
+#generate{
+    
+    height: 2rem;
+    background-color: green;
+}
