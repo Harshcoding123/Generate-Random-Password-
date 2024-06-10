@@ -1,0 +1,35 @@
+let input =document.querySelector("input");
+let generate =document.querySelector("#box2");
+let copyimg= document.querySelector("#copy");
+let uppercase ="ABCDEFGHIGKLMNOPQRSTUVWZYX";
+let lowercase ="abcdefghigklmnopqrstuvwxyz";
+let number ="0123456789";
+let symbol ="@#$%^&*()_+~|}{[]></-=";
+let allChars= uppercase+lowercase+number+symbol;
+let length =12;
+function createPassword(){
+    let password ="";
+     password+=uppercase[Math.floor(Math.random()*uppercase.length)];
+     password+=lowercase[Math.floor(Math.random()*lowercase.length)];
+     password+=number[Math.floor(Math.random()*number.length)];
+     password+=symbol[Math.floor(Math.random()*symbol.length)];
+     
+     while(password.length<length){
+        password+=allChars[Math.floor(Math.random()*allChars.length)];
+     }
+     input.value =password;
+}
+
+if(generate.addEventListener("click",()=>{
+    createPassword();
+}));
+
+
+function copyPassword(){
+    input.select();
+    document.execCommand("copy");
+}
+
+copyimg.addEventListener("click",()=>{
+    copyPassword();
+})
